@@ -11,10 +11,13 @@
       rel="stylesheet"
     />
     <!-- font awesome cdn -->
-    <script
-      src="https://kit.fontawesome.com/09ff7ef6d3.js"
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
       crossorigin="anonymous"
-    ></script>
+      referrerpolicy="no-referrer"
+    />
     <!-- tailwind cdn -->
     <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
     <script>
@@ -31,22 +34,22 @@
     <title>Tea House</title>
   </head>
   <body class="max-w-screen-xl mx-auto p-16 lg:p-28">
-    <header class="flex pt-10 mb-10">
+    <header class="lg:flex pt-10 mb-10">
       <!-- text content -->
       <div>
-        <h1 class="text-5xl md:text-7xl">
+        <h1 class="text-5xl md:text-7xl font-bold">
           It's good <br />
           tea time at The <br />
           Tea House
         </h1>
-        <p class="text-gray-500 w-3/4">
+        <p class="text-gray-500 w-3/4 my-5">
           Tea and Botanical Solutions Supplier Give Optimum Satisfaction To Your
           Taste Buds.
         </p>
         <button
           class="bg-gradient-to-r from-orange-500 to-red-500 px-4 py-2 rounded-lg text-white font-bold"
         >
-          Explore More <i class="fa-solid fa-arrow-right"></i>
+          Explore More <i class="fa-solid fa-arrow-right -rotate-45"></i>
         </button>
       </div>
       <!-- image content -->
@@ -57,7 +60,7 @@
         </div>
         <!-- Card -->
         <div
-          class="absolute flex items-center bg-white shadow-md rounded-lg px-2 py-2 top-28 md:top-80 md:left-32 lg:left-28"
+          class="absolute flex items-center bg-white shadow-md rounded-lg top-28 md:top-80 md:left-32 lg:left-28 px-3"
         >
           <!-- icon -->
           <div><i class="fa-solid fa-star"></i></div>
@@ -69,5 +72,46 @@
         </div>
       </div>
     </header>
+
+    <!-- Featured Product Section -->
+    <section class="py-8 lg:py-24">
+      <!-- Title -->
+      <div class="text-center">
+        <h1 class="text-3xl lg:text-4xl font-bold mb-2">
+          Our Featured Product
+        </h1>
+        <p class="text-gray-600 max-w-xl mx-auto">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita
+          asperiores itaque nesciunt maxime placeat deserunt qui. Labore ex quas
+          nostrum.
+        </p>
+      </div>
+      <!-- Grid Cards -->
+      <div
+        class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 text-center mx-auto"
+      >
+        <!-- Product Cards -->
+        <div class="rounded-lg shadow-md bg-gray-50 overflow-hidden">
+          <img class="mx-auto pt-4" src="./images/tea-1.png" alt="" />
+          <h1 class="text-2xl font-bold">Milk Tea</h1>
+          <p class="text-gray-500">Creamer could be replaced by fresh milk</p>
+        </div>
+        <div class="rounded-lg shadow-md bg-gray-50 overflow-hidden">
+          <img class="mx-auto pt-4" src="./images/tea-2.png" alt="" />
+          <h1 class="text-2xl font-bold">Black Tea</h1>
+          <p class="text-gray-500">Creamer could be replaced by fresh milk</p>
+        </div>
+        <div class="rounded-lg shadow-md bg-gray-50 overflow-hidden">
+          <img class="mx-auto pt-4" src="./images/tea-3.png" alt="" />
+          <h1 class="text-2xl font-bold">Lemon Tea</h1>
+          <p class="text-gray-500">Creamer could be replaced by fresh milk</p>
+        </div>
+        <div class="rounded-lg shadow-md bg-gray-50 overflow-hidden">
+          <img class="mx-auto pt-4" src="./images/tea-4.png" alt="" />
+          <h1 class="text-2xl font-bold">Green Tea</h1>
+          <p class="text-gray-500">Creamer could be replaced by fresh milk</p>
+        </div>
+      </div>
+    </section>
   </body>
 </html>
