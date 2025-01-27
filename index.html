@@ -19,7 +19,7 @@
       referrerpolicy="no-referrer"
     />
     <!-- tailwind cdn -->
-    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
     <script>
       tailwind.config = {
         theme: {
@@ -27,14 +27,17 @@
             colors: {
               clifford: "#da373d",
             },
+            fontFamily: {
+              manrope: ["Manrope", "serif"],
+            },
           },
         },
       };
     </script>
     <title>Tea House</title>
   </head>
-  <body class="max-w-screen-xl mx-auto p-16 lg:p-28">
-    <header class="lg:flex pt-10 mb-10">
+  <body class="mx-auto p-16 lg:p-28 font-manrope">
+    <header class="lg:flex pt-10 mb-10 max-w-screen-xl">
       <!-- text content -->
       <div>
         <h1 class="text-5xl md:text-7xl font-bold">
@@ -73,7 +76,7 @@
       </div>
     </header>
 
-    <main>
+    <main class="max-w-screen-xl">
       <!-- Featured Product Section -->
       <section class="py-8 lg:py-24">
         <!-- Title -->
@@ -189,24 +192,7 @@
           <!-- reviews card section -->
           <div class="relative py-24">
             <!-- Top Card -->
-            <div
-              class="relative left-8 md:left-32 h-56 w-full md:w-3/4 bg-white text-black rounded-lg flex items-center px-5 opacity-40"
-            >
-              <div class="absolute -top-5 -left-5 bg-white rounded-full">
-                <img class="p-1" src="./images/client.png" alt="" />
-              </div>
-              <div>
-                <p class="text-gray-500 mb-5">
-                  We are providing the best and suitable home insurance services
-                  for the people who are interested to treatment
-                </p>
-                <h1 class="font-bold">Liam Yuma</h1>
-                <small class="text-gray-500 font-bold">Businessmen</small>
-              </div>
-            </div>
-
-            <!-- middle card -->
-            <div class="absolute top-53 z-1">
+            <div class="absolute top-56 z-10">
               <div
                 class="h-56 w-full md:w-3/4 bg-white text-black rounded-lg flex items-center px-5"
               >
@@ -221,6 +207,23 @@
                   <h1 class="font-bold">Liam Yuma</h1>
                   <small class="text-gray-500 font-bold">Businessmen</small>
                 </div>
+              </div>
+            </div>
+
+            <!-- middle card -->
+            <div
+              class="relative left-8 md:left-32 h-56 w-full md:w-3/4 bg-white text-black rounded-lg flex items-center px-5 opacity-40"
+            >
+              <div class="absolute -top-5 -left-5 bg-white rounded-full">
+                <img class="p-1" src="./images/client.png" alt="" />
+              </div>
+              <div>
+                <p class="text-gray-500 mb-5">
+                  We are providing the best and suitable home insurance services
+                  for the people who are interested to treatment
+                </p>
+                <h1 class="font-bold">Liam Yuma</h1>
+                <small class="text-gray-500 font-bold">Businessmen</small>
               </div>
             </div>
 
@@ -246,7 +249,7 @@
     </main>
 
     <!-- Footer Section -->
-    <footer class="bg-orange-100 text-gray-700 py-10 px-4 md:px-14">
+    <footer class="bg-orange-100 text-gray-700 py-10 px-4 md:px-14 w-[100%]">
       <div class="w-10/12 mx-auto">
         <!-- Logo -->
         <div class="flex justify-between">
